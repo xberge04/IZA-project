@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MHCoreData",
+        "repositoryURL": "https://github.com/IZAmhfit/MHCoreData",
+        "state": {
+          "branch": "master",
+          "revision": "9a246b198931932135f076d6b1029a20f8c920df",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

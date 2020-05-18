@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="autobus-bold.regular.ttf">
+            <string>AutobusBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController interfaceStyle="dark" id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_w.png" translatesAutoresizingMaskIntoConstraints="NO" id="V0m-R6-TCP">
+                                <rect key="frame" x="108" y="-178" width="120" height="795"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMĚNÁŘ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pc-KY-YYb">
+                                <rect key="frame" x="20" y="442" width="334" height="38"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0031235921200000001" green="0.0" blue="0.1563912928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="V0m-R6-TCP" firstAttribute="leading" secondItem="grF-l6-BxS" secondAttribute="leading" constant="108" id="7Z2-yu-mxl"/>
+                            <constraint firstItem="2Pc-KY-YYb" firstAttribute="centerX" secondItem="V0m-R6-TCP" secondAttribute="centerX" constant="-0.5" id="7zR-gj-Oej"/>
+                            <constraint firstItem="2Pc-KY-YYb" firstAttribute="leading" secondItem="grF-l6-BxS" secondAttribute="leading" constant="20" id="jzU-WN-eFN"/>
+                            <constraint firstItem="V0m-R6-TCP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kPo-kE-Ejd"/>
+                            <constraint firstItem="2Pc-KY-YYb" firstAttribute="top" secondItem="V0m-R6-TCP" secondAttribute="top" constant="620.5" id="pWG-hi-iDu"/>
+                            <constraint firstItem="V0m-R6-TCP" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="uL7-hX-WH1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="grF-l6-BxS"/>
+                    </view>
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="374.33035714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon_w.png" width="1024" height="1024"/>
+    </resources>
+</document>

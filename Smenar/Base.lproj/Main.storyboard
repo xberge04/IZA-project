@@ -1,0 +1,1279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XrZ-cB-8Ie">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="autobus-bold.regular.ttf">
+            <string>AutobusBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="H24-uw-FWg">
+            <objects>
+                <navigationController id="h2q-pp-wNp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="sP3-WZ-x3S"/>
+                    <navigationItem key="navigationItem" id="6TO-vr-Il8"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L1c-id-67y">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="v1N-tD-umH" kind="relationship" relationship="rootViewController" id="VpZ-TZ-LtE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5eJ-2d-CCw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1310" y="-275"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="ABZ-Sa-VAt">
+            <objects>
+                <navigationController id="8ga-Qk-fw3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="e3P-Fl-lqd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9rE-gg-2JV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tQl-nw-ThM" kind="relationship" relationship="rootViewController" id="dxL-Se-7Yt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hOI-RO-3gy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-517" y="-275"/>
+        </scene>
+        <!--Seznam směn-->
+        <scene sceneID="DPn-TF-wfe">
+            <objects>
+                <viewController interfaceStyle="dark" id="tQl-nw-ThM" customClass="ShiftTableVC" customModule="Směnář" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w49-cp-xik">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aFK-gL-puy">
+                                <rect key="frame" x="0.0" y="88" width="453" height="954"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="sectionIndexBackgroundColor" red="0.0039215686274509803" green="0.0" blue="0.1563912928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyTableCell" rowHeight="86" id="0nm-ta-QSN" customClass="MyTableCell" customModule="Směnář" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="453" height="86"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" tableViewCell="0nm-ta-QSN" translatesAutoresizingMaskIntoConstraints="NO" id="NCv-lC-ww6" userLabel="ShiftCell">
+                                            <rect key="frame" x="0.0" y="0.0" width="453" height="86"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p9L-ut-C0p">
+                                                    <rect key="frame" x="3" y="0.0" width="82" height="82"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="82" id="PhH-lT-i06"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Konec: 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTF-C0-JGW">
+                                                    <rect key="frame" x="88" y="57" width="91.666666666666686" height="18"/>
+                                                    <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Začátek: 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bl-Gj-fxQ">
+                                                    <rect key="frame" x="88" y="15" width="91.666666666666686" height="18"/>
+                                                    <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Den:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6b-49-LwH">
+                                                    <rect key="frame" x="211" y="32" width="112" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="b11-TX-wiD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                                    <color key="textColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5m8-RW-PPx">
+                                                    <rect key="frame" x="331" y="32" width="19" height="22"/>
+                                                    <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" image="trash" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="trashButtonTapped:" destination="tQl-nw-ThM" eventType="touchUpInside" id="gGn-zF-QBP"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0039215686269999999" green="0.0039215686269999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="8bl-Gj-fxQ" firstAttribute="top" secondItem="NCv-lC-ww6" secondAttribute="topMargin" constant="4" id="Ag0-Dc-dh6"/>
+                                                <constraint firstItem="5m8-RW-PPx" firstAttribute="top" secondItem="NCv-lC-ww6" secondAttribute="topMargin" constant="21" id="GFt-Wk-ats"/>
+                                                <constraint firstItem="mTF-C0-JGW" firstAttribute="top" secondItem="8bl-Gj-fxQ" secondAttribute="bottom" constant="24" id="K2S-rX-nMI"/>
+                                                <constraint firstItem="p9L-ut-C0p" firstAttribute="leading" secondItem="ZR7-Ux-w9n" secondAttribute="leading" constant="3" id="Lr0-mY-y1r"/>
+                                                <constraint firstItem="L6b-49-LwH" firstAttribute="leading" secondItem="NCv-lC-ww6" secondAttribute="leading" constant="211" id="PwV-xZ-WVc"/>
+                                                <constraint firstItem="p9L-ut-C0p" firstAttribute="centerY" secondItem="L6b-49-LwH" secondAttribute="centerY" id="Rlp-fP-8u8"/>
+                                                <constraint firstItem="8bl-Gj-fxQ" firstAttribute="trailing" secondItem="mTF-C0-JGW" secondAttribute="trailing" id="Urf-sG-XKc"/>
+                                                <constraint firstItem="8bl-Gj-fxQ" firstAttribute="leading" secondItem="NCv-lC-ww6" secondAttribute="leading" constant="88" id="bmG-vC-rhd"/>
+                                                <constraint firstItem="5m8-RW-PPx" firstAttribute="leading" secondItem="L6b-49-LwH" secondAttribute="trailing" constant="8" id="nG6-GZ-0lZ"/>
+                                                <constraint firstItem="mTF-C0-JGW" firstAttribute="leading" secondItem="p9L-ut-C0p" secondAttribute="trailing" constant="3" id="qMA-S0-l1B"/>
+                                                <constraint firstItem="p9L-ut-C0p" firstAttribute="top" secondItem="ZR7-Ux-w9n" secondAttribute="top" id="qyD-b2-i0z"/>
+                                                <constraint firstItem="8bl-Gj-fxQ" firstAttribute="leading" secondItem="mTF-C0-JGW" secondAttribute="leading" id="yWN-D4-IhI"/>
+                                            </constraints>
+                                            <viewLayoutGuide key="safeArea" id="ZR7-Ux-w9n"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0039215686269999999" green="0.0039215686269999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="MyImage" destination="p9L-ut-C0p" id="NXt-Af-z5N"/>
+                                            <outlet property="ShiftCell" destination="NCv-lC-ww6" id="c0i-ov-arC"/>
+                                            <outlet property="ShiftDay" destination="L6b-49-LwH" id="CNb-fn-yyO"/>
+                                            <outlet property="ShiftEnd" destination="mTF-C0-JGW" id="070-0R-Gci"/>
+                                            <outlet property="ShiftStart" destination="8bl-Gj-fxQ" id="kjg-IF-AxX"/>
+                                            <outlet property="TrashButton" destination="5m8-RW-PPx" id="mJ3-8P-2kB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0039215686269999999" green="0.0039215686269999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aFK-gL-puy" firstAttribute="centerX" secondItem="w49-cp-xik" secondAttribute="centerX" id="Gan-sQ-Xsz"/>
+                            <constraint firstItem="oZc-Ka-73u" firstAttribute="bottom" secondItem="aFK-gL-puy" secondAttribute="bottom" id="H2s-IL-EnD"/>
+                            <constraint firstItem="oZc-Ka-73u" firstAttribute="trailing" secondItem="aFK-gL-puy" secondAttribute="trailing" id="P08-eF-67N"/>
+                            <constraint firstItem="aFK-gL-puy" firstAttribute="top" secondItem="oZc-Ka-73u" secondAttribute="top" id="ilp-SN-L05"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oZc-Ka-73u"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="2" title="Seznam směn" image="list.dash" catalog="system" landscapeImage="list.dash" largeContentSizeImage="list.dash" id="CtZ-vA-eys"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="FMf-u5-ZeE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="F2T-o9-o4c">
+                            <color key="tintColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="NAH-Ku-keh" kind="show" id="cSM-lz-NX1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="aFK-gL-puy" id="zkm-p8-eK1"/>
+                        <segue destination="NAH-Ku-keh" kind="show" identifier="shiftDetail" id="JlM-Gh-I5P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="89x-AF-bek" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-519.20000000000005" y="446.62668665667172"/>
+        </scene>
+        <!--Kalendář-->
+        <scene sceneID="PX4-Go-4RE">
+            <objects>
+                <viewController interfaceStyle="dark" id="C2H-v9-jdT" customClass="CalendarVC" customModule="Směnář" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aqs-vD-dCC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="So" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1P-DO-OAS">
+                                <rect key="frame" x="284" y="154" width="16" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Fl-d3-JPM">
+                                <rect key="frame" x="145" y="154" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Út" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObW-wK-BQt">
+                                <rect key="frame" x="116" y="154" width="14.333333333333343" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="Po" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HX2-P6-MZT">
+                                <rect key="frame" x="68" y="154" width="16.333333333333329" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Čt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYk-ql-pmw">
+                                <rect key="frame" x="188" y="154" width="38" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pá" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1W-cc-CW2">
+                                <rect key="frame" x="242" y="154" width="16.666666666666657" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="Ne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ko-MQ-AGz">
+                                <rect key="frame" x="329" y="154" width="16.666666666666686" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0xU-Wz-0gK">
+                                <rect key="frame" x="58" y="199" width="298" height="280.66666666666674"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0031235921200000001" green="0.0" blue="0.1563912928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Zwq-7t-qad"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="mCi-0q-rNY"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="4" minimumInteritemSpacing="3" id="MGj-Gv-drc">
+                                    <size key="itemSize" width="40" height="40"/>
+                                    <size key="estimatedItemSize" width="40" height="40"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Calendar" id="DgV-fD-b55" customClass="DataCollectionViewCell1" customModule="Směnář" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vf9-Ap-cWT">
+                                                    <rect key="frame" x="8" y="8" width="25" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="19"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <size key="customSize" width="40" height="40"/>
+                                        <connections>
+                                            <outlet property="DataLabel" destination="Vf9-Ap-cWT" id="2Q9-5T-vWA"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="C2H-v9-jdT" id="8hs-Bu-EXh"/>
+                                    <outlet property="delegate" destination="C2H-v9-jdT" id="4N0-Nl-wq7"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eh-fH-JSk">
+                                <rect key="frame" x="145" y="108" width="135" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFh-25-2IE">
+                                <rect key="frame" x="313" y="113" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                <state key="normal" title="Další">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Next:" destination="C2H-v9-jdT" eventType="touchUpInside" id="g9b-aw-9IZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ranní" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrX-HG-std">
+                                <rect key="frame" x="88" y="480" width="79" height="20.333333333333371"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Odpolední" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5O-Mw-GBT">
+                                <rect key="frame" x="88" y="518" width="79" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Noční" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAr-nb-LG7">
+                                <rect key="frame" x="271" y="473" width="45" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dovolená" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9No-TR-Ykn">
+                                <rect key="frame" x="271" y="518" width="71.333333333333314" height="36.333333333333371"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="•" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzE-8K-gdu">
+                                <rect key="frame" x="67" y="472" width="13" height="36.333333333333371"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="•" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sr4-zW-vw3">
+                                <rect key="frame" x="67" y="516" width="13" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="•" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zup-Uo-BIY">
+                                <rect key="frame" x="250" y="472" width="13" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="•" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9J-bv-buV">
+                                <rect key="frame" x="250" y="517" width="13" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERS-2w-yUF">
+                                <rect key="frame" x="74" y="111" width="65" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                <state key="normal" title="Předchozí">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Back:" destination="C2H-v9-jdT" eventType="touchUpInside" id="xfK-Ip-j5D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0031235921200000001" green="0.0" blue="0.1563912928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="TTQ-u0-oTr"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="3" title="Kalendář" image="calendar" catalog="system" landscapeImage="calendar" largeContentSizeImage="calendar" id="ifW-69-9ba"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="y3O-5m-D7K">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="VrH-Ty-xDY">
+                            <color key="tintColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="NAH-Ku-keh" kind="show" id="wLj-Bh-624"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="Calendar" destination="0xU-Wz-0gK" id="7wb-2M-5sA"/>
+                        <outlet property="MonthLabel" destination="7eh-fH-JSk" id="KP2-q2-Gxs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xI-cV-Oc1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261.60000000000002" y="446.62668665667172"/>
+        </scene>
+        <!--SettingsVC-->
+        <scene sceneID="ziv-CZ-F4c">
+            <objects>
+                <viewController storyboardIdentifier="SettingsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lol-DE-tfX" customClass="SettingsVC" customModule="Směnář" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMB-gL-OdK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SM0-DG-J7X">
+                                <rect key="frame" x="138" y="752" width="138" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Sh6-Ll-EL5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="20"/>
+                                <color key="tintColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Uložit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="SaveButton:" destination="Lol-DE-tfX" eventType="touchDown" id="xLy-bk-LW5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Základní hodinová sazba" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K3b-vw-Im3">
+                                <rect key="frame" x="33" y="142.66666666666666" width="191" height="22"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="753" text="Měsíční úvazek" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B7r-KT-Lvb">
+                                <rect key="frame" x="33.000000000000007" y="231.33333333333334" width="118.66666666666669" height="22"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CZK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nRa-4L-tf9">
+                                <rect key="frame" x="159.66666666666666" y="191" width="28.333333333333343" height="22"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="bok-b3-Sv4">
+                                <rect key="frame" x="33.000000000000007" y="185" width="118.66666666666669" height="34"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="salarySelected:" destination="Lol-DE-tfX" eventType="touchDown" id="xmB-3V-Hvd"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="754" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xrs-01-iCf">
+                                <rect key="frame" x="33.000000000000007" y="273.33333333333331" width="118.66666666666669" height="34"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="eO7-E4-jQc"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="workLoadSelected:" destination="Lol-DE-tfX" eventType="touchDown" id="l8S-8X-O0r"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="DhE-nO-eu7">
+                                <rect key="frame" x="33.000000000000007" y="362" width="118.66666666666669" height="34"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="BUJ-0N-lpp"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="holidaySelected:" destination="Lol-DE-tfX" eventType="touchDown" id="5Jp-kS-LDy"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dnů dovolené" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jyr-YC-Ept">
+                                <rect key="frame" x="33" y="320" width="102" height="22"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stravenky" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dod-H6-AgX">
+                                <rect key="frame" x="33.000000000000007" y="432" width="81.666666666666686" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="ExO-L2-zhx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hodnota stravenky" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Uv-0m-idm">
+                                <rect key="frame" x="33" y="484" width="146.66666666666666" height="22"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CZK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NOe-qa-kVo">
+                                <rect key="frame" x="159.66666666666666" y="532" width="28.333333333333343" height="22"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="cio-oD-Jgc">
+                                <rect key="frame" x="33.000000000000007" y="526" width="118.66666666666669" height="34"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="luncheonSelected:" destination="Lol-DE-tfX" eventType="touchDown" id="SmO-5l-wyD"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vaše nastavení" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ptD-km-jLT">
+                                <rect key="frame" x="122.66666666666669" y="106" width="169" height="11.666666666666671"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="11.666666666666671" id="dUf-9V-1tx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3b7-GJ-7aa">
+                                <rect key="frame" x="130.66666666666666" y="427.66666666666669" width="51" height="30.666666666666686"/>
+                                <connections>
+                                    <action selector="Luncheon:" destination="Lol-DE-tfX" eventType="valueChanged" id="g7a-yi-Bu4"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hodin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R96-1d-rWs">
+                                <rect key="frame" x="159.66666666666666" y="279" width="42" height="22.666666666666686"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0031235921200000001" green="0.0" blue="0.1563912928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cio-oD-Jgc" firstAttribute="top" secondItem="9Uv-0m-idm" secondAttribute="bottom" constant="20" id="09V-ew-pQV"/>
+                            <constraint firstItem="WNC-XQ-zFS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="R96-1d-rWs" secondAttribute="trailing" symbolic="YES" id="22P-lU-E8C"/>
+                            <constraint firstItem="Xrs-01-iCf" firstAttribute="centerY" secondItem="R96-1d-rWs" secondAttribute="centerY" id="2I6-X5-4TM"/>
+                            <constraint firstItem="Xrs-01-iCf" firstAttribute="leading" secondItem="Jyr-YC-Ept" secondAttribute="leading" id="2jd-Gs-hcx"/>
+                            <constraint firstItem="DhE-nO-eu7" firstAttribute="leading" secondItem="dod-H6-AgX" secondAttribute="leading" id="4eV-EF-L0z"/>
+                            <constraint firstItem="Jyr-YC-Ept" firstAttribute="leading" secondItem="DhE-nO-eu7" secondAttribute="leading" id="5My-SD-u6Q"/>
+                            <constraint firstItem="dod-H6-AgX" firstAttribute="top" secondItem="DhE-nO-eu7" secondAttribute="bottom" constant="36" id="6Yf-L3-Cgk"/>
+                            <constraint firstItem="nRa-4L-tf9" firstAttribute="leading" secondItem="bok-b3-Sv4" secondAttribute="trailing" constant="8" id="6zs-oh-amj"/>
+                            <constraint firstItem="R96-1d-rWs" firstAttribute="top" secondItem="nRa-4L-tf9" secondAttribute="bottom" constant="66" id="8bQ-AL-rcd"/>
+                            <constraint firstItem="ptD-km-jLT" firstAttribute="centerX" secondItem="VMB-gL-OdK" secondAttribute="centerX" id="AMp-ps-pPY"/>
+                            <constraint firstItem="NOe-qa-kVo" firstAttribute="top" secondItem="9Uv-0m-idm" secondAttribute="bottom" constant="26" id="Cxp-Rg-gHl"/>
+                            <constraint firstItem="cio-oD-Jgc" firstAttribute="centerY" secondItem="NOe-qa-kVo" secondAttribute="centerY" id="E5j-m9-js7"/>
+                            <constraint firstItem="ptD-km-jLT" firstAttribute="top" secondItem="WNC-XQ-zFS" secondAttribute="top" constant="18" id="Eo8-F1-IYv"/>
+                            <constraint firstItem="9Uv-0m-idm" firstAttribute="leading" secondItem="cio-oD-Jgc" secondAttribute="leading" id="GZ9-9W-GMo"/>
+                            <constraint firstItem="B7r-KT-Lvb" firstAttribute="top" secondItem="bok-b3-Sv4" secondAttribute="bottom" constant="12.333333333333343" id="IPo-Hg-GDu"/>
+                            <constraint firstItem="dod-H6-AgX" firstAttribute="centerY" secondItem="3b7-GJ-7aa" secondAttribute="centerY" id="N2o-yx-Fjo"/>
+                            <constraint firstItem="bok-b3-Sv4" firstAttribute="trailing" secondItem="B7r-KT-Lvb" secondAttribute="trailing" id="OrP-98-LwH"/>
+                            <constraint firstItem="WNC-XQ-zFS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="K3b-vw-Im3" secondAttribute="trailing" symbolic="YES" id="PS4-hc-y19"/>
+                            <constraint firstItem="Jyr-YC-Ept" firstAttribute="top" secondItem="Xrs-01-iCf" secondAttribute="bottom" constant="12.666666666666686" id="PiG-nn-nWH"/>
+                            <constraint firstItem="Xrs-01-iCf" firstAttribute="top" secondItem="B7r-KT-Lvb" secondAttribute="bottom" constant="19.999999999999972" id="Pxb-Ay-AkU"/>
+                            <constraint firstItem="K3b-vw-Im3" firstAttribute="leading" secondItem="bok-b3-Sv4" secondAttribute="leading" id="RNy-Vi-Qes"/>
+                            <constraint firstItem="SM0-DG-J7X" firstAttribute="leading" secondItem="WNC-XQ-zFS" secondAttribute="leading" constant="138" id="RrP-zJ-eT8"/>
+                            <constraint firstItem="Xrs-01-iCf" firstAttribute="trailing" secondItem="DhE-nO-eu7" secondAttribute="trailing" id="Tbm-Z8-vpZ"/>
+                            <constraint firstItem="DhE-nO-eu7" firstAttribute="trailing" secondItem="cio-oD-Jgc" secondAttribute="trailing" id="Tyh-EA-NWK"/>
+                            <constraint firstItem="B7r-KT-Lvb" firstAttribute="trailing" secondItem="Xrs-01-iCf" secondAttribute="trailing" id="W7V-xs-DgN"/>
+                            <constraint firstItem="WNC-XQ-zFS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NOe-qa-kVo" secondAttribute="trailing" symbolic="YES" id="Zc4-1q-jxW"/>
+                            <constraint firstItem="bok-b3-Sv4" firstAttribute="centerY" secondItem="nRa-4L-tf9" secondAttribute="centerY" id="bJS-UW-g21"/>
+                            <constraint firstItem="WNC-XQ-zFS" firstAttribute="bottom" secondItem="SM0-DG-J7X" secondAttribute="bottom" constant="21" id="c2u-EO-CYp"/>
+                            <constraint firstItem="3b7-GJ-7aa" firstAttribute="top" secondItem="DhE-nO-eu7" secondAttribute="bottom" constant="31.666666666666686" id="dHE-C8-U2y"/>
+                            <constraint firstItem="nRa-4L-tf9" firstAttribute="leading" secondItem="R96-1d-rWs" secondAttribute="leading" id="hNy-QV-pN7"/>
+                            <constraint firstItem="9Uv-0m-idm" firstAttribute="top" secondItem="dod-H6-AgX" secondAttribute="bottom" constant="30" id="iWt-ZN-6hC"/>
+                            <constraint firstItem="DhE-nO-eu7" firstAttribute="top" secondItem="Jyr-YC-Ept" secondAttribute="bottom" constant="20" id="k9e-d9-OO9"/>
+                            <constraint firstItem="R96-1d-rWs" firstAttribute="leading" secondItem="NOe-qa-kVo" secondAttribute="leading" id="lRD-gJ-WT8"/>
+                            <constraint firstItem="ptD-km-jLT" firstAttribute="centerX" secondItem="SM0-DG-J7X" secondAttribute="centerX" id="oMo-pa-n6i"/>
+                            <constraint firstItem="3b7-GJ-7aa" firstAttribute="trailing" secondItem="9Uv-0m-idm" secondAttribute="trailing" id="qgD-Qd-5K2"/>
+                            <constraint firstItem="K3b-vw-Im3" firstAttribute="top" secondItem="ptD-km-jLT" secondAttribute="bottom" constant="24.999999999999986" id="rky-ZO-QOm"/>
+                            <constraint firstItem="dod-H6-AgX" firstAttribute="leading" secondItem="9Uv-0m-idm" secondAttribute="leading" id="ruf-so-5iA"/>
+                            <constraint firstItem="WNC-XQ-zFS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nRa-4L-tf9" secondAttribute="trailing" symbolic="YES" id="u5W-fF-42H"/>
+                            <constraint firstItem="bok-b3-Sv4" firstAttribute="top" secondItem="K3b-vw-Im3" secondAttribute="bottom" constant="20.333333333333343" id="vcH-Gx-rcl"/>
+                            <constraint firstItem="nRa-4L-tf9" firstAttribute="top" secondItem="K3b-vw-Im3" secondAttribute="bottom" constant="26.333333333333343" id="vri-Ij-Q7O"/>
+                            <constraint firstItem="bok-b3-Sv4" firstAttribute="leading" secondItem="B7r-KT-Lvb" secondAttribute="leading" id="vuJ-dG-HQ6"/>
+                            <constraint firstItem="3b7-GJ-7aa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dod-H6-AgX" secondAttribute="trailing" constant="8" symbolic="YES" id="xAu-sV-IZQ"/>
+                            <constraint firstItem="K3b-vw-Im3" firstAttribute="leading" secondItem="WNC-XQ-zFS" secondAttribute="leading" constant="33" id="zME-E1-IMC"/>
+                            <constraint firstItem="B7r-KT-Lvb" firstAttribute="leading" secondItem="Xrs-01-iCf" secondAttribute="leading" id="zg3-wx-Iyo"/>
+                            <constraint firstItem="WNC-XQ-zFS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jyr-YC-Ept" secondAttribute="trailing" symbolic="YES" id="zya-dp-Hqw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WNC-XQ-zFS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dJ6-26-WFC"/>
+                    <connections>
+                        <outlet property="Currency" destination="NOe-qa-kVo" id="1LF-zs-N4m"/>
+                        <outlet property="Holiday" destination="DhE-nO-eu7" id="5r3-lQ-Wui"/>
+                        <outlet property="LuncheonPrice" destination="cio-oD-Jgc" id="kMm-PU-SoA"/>
+                        <outlet property="LuncheonPriceLabel" destination="9Uv-0m-idm" id="bjw-eb-pUj"/>
+                        <outlet property="LuncheonSwitch" destination="3b7-GJ-7aa" id="0xS-Jt-Lvw"/>
+                        <outlet property="Salary" destination="bok-b3-Sv4" id="Zhj-iH-sIK"/>
+                        <outlet property="WorkLoad" destination="Xrs-01-iCf" id="tY0-xo-IRS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1uf-Yh-iVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1311.2" y="1279.6101949025488"/>
+        </scene>
+        <!--Shift AddVC-->
+        <scene sceneID="fYh-YK-7Mx">
+            <objects>
+                <viewController id="NAH-Ku-keh" customClass="ShiftAddVC" customModule="Směnář" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uAs-uM-UPq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyO-cj-wbM">
+                                <rect key="frame" x="138" y="760" width="138" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="20"/>
+                                <color key="tintColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Uložit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="SaveButton:" destination="NAH-Ku-keh" eventType="touchUpInside" id="lOW-cH-21r"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Fqo-Do-G7o">
+                                <rect key="frame" x="50" y="107" width="314" height="32"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="Ranní"/>
+                                    <segment title="Odpolední"/>
+                                    <segment title="Noční"/>
+                                    <segment title="Dovolená"/>
+                                </segments>
+                                <color key="tintColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="selectedSegmentTintColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="shiftChanged:" destination="NAH-Ku-keh" eventType="valueChanged" id="2Zr-zJ-aaS"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Začátek" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYo-6A-b0h">
+                                <rect key="frame" x="30.000000000000007" y="166" width="93.666666666666686" height="30.333333333333343"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Konec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6J-bm-xyv">
+                                <rect key="frame" x="30.000000000000007" y="346.66666666666669" width="74.666666666666686" height="30.333333333333314"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VLg-8X-zCi">
+                                <rect key="frame" x="30" y="233.66666666666666" width="169" height="33.999999999999972"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="CcN-TF-mrt"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="startDaySelected:" destination="NAH-Ku-keh" eventType="touchDown" id="P7V-nR-iO8"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X2N-RA-vkS">
+                                <rect key="frame" x="30" y="297.66666666666669" width="169" height="34"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="startTimeSelected:" destination="NAH-Ku-keh" eventType="editingDidEnd" id="J5b-2g-vdL"/>
+                                    <action selector="startTimeSelected:" destination="NAH-Ku-keh" eventType="touchDown" id="d4V-1q-IYu"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UG5-1k-9AE">
+                                <rect key="frame" x="30" y="403" width="169" height="37.333333333333314"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="endDaySelected:" destination="NAH-Ku-keh" eventType="touchDown" id="xsm-XZ-hTZ"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eze-Zk-ec6">
+                                <rect key="frame" x="29.999999999999996" y="204.33333333333334" width="56.666666666666657" height="22.333333333333343"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALe-zy-aya">
+                                <rect key="frame" x="29.999999999999996" y="385" width="56.666666666666657" height="22.333333333333314"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Čas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vs3-gc-Orm">
+                                <rect key="frame" x="29.999999999999996" y="456.33333333333331" width="33.666666666666657" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="lB9-AL-sCK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fp-VR-dr6">
+                                <rect key="frame" x="310" y="541" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Čas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbK-e2-Ipo">
+                                <rect key="frame" x="29.999999999999996" y="275.66666666666669" width="33.666666666666657" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="2c5-I8-sB7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="60J-P5-WFI">
+                                <rect key="frame" x="30" y="483.33333333333331" width="169" height="33.999999999999943"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Vd7-YP-HTh"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="endTimeSelected:" destination="NAH-Ku-keh" eventType="editingDidEnd" id="a0J-kg-eNX"/>
+                                    <action selector="endTimeSelected:" destination="NAH-Ku-keh" eventType="touchDown" id="tsd-hD-Bqd"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0031235921200000001" green="0.0" blue="0.1563912928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ALe-zy-aya" firstAttribute="leading" secondItem="UG5-1k-9AE" secondAttribute="leading" id="0bE-3w-WgD"/>
+                            <constraint firstItem="47T-ie-XRb" firstAttribute="bottom" secondItem="MyO-cj-wbM" secondAttribute="bottom" constant="17" id="1KR-xy-xOq"/>
+                            <constraint firstItem="X2N-RA-vkS" firstAttribute="leading" secondItem="g6J-bm-xyv" secondAttribute="leading" id="1dP-Ze-AoD"/>
+                            <constraint firstItem="LbK-e2-Ipo" firstAttribute="top" secondItem="VLg-8X-zCi" secondAttribute="bottom" constant="8" symbolic="YES" id="2JB-Ab-bR9"/>
+                            <constraint firstItem="VLg-8X-zCi" firstAttribute="trailing" secondItem="X2N-RA-vkS" secondAttribute="trailing" id="2La-8C-XmQ"/>
+                            <constraint firstItem="VLg-8X-zCi" firstAttribute="top" secondItem="eze-Zk-ec6" secondAttribute="bottom" constant="7" id="3xn-RC-dmC"/>
+                            <constraint firstItem="UG5-1k-9AE" firstAttribute="trailing" secondItem="60J-P5-WFI" secondAttribute="trailing" id="9FF-YK-cxh"/>
+                            <constraint firstItem="47T-ie-XRb" firstAttribute="trailing" secondItem="3Fp-VR-dr6" secondAttribute="trailing" constant="62" id="9cg-KV-6fl"/>
+                            <constraint firstItem="X2N-RA-vkS" firstAttribute="top" secondItem="VLg-8X-zCi" secondAttribute="bottom" constant="30" id="9py-G8-Omx"/>
+                            <constraint firstItem="47T-ie-XRb" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="g6J-bm-xyv" secondAttribute="trailing" symbolic="YES" id="AVD-FH-2G4"/>
+                            <constraint firstItem="47T-ie-XRb" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eze-Zk-ec6" secondAttribute="trailing" symbolic="YES" id="CRj-yI-6mk"/>
+                            <constraint firstItem="60J-P5-WFI" firstAttribute="top" secondItem="vs3-gc-Orm" secondAttribute="bottom" constant="4" id="Ff8-Va-QFE"/>
+                            <constraint firstItem="BYo-6A-b0h" firstAttribute="top" secondItem="Fqo-Do-G7o" secondAttribute="bottom" constant="28" id="HKX-BE-SgT"/>
+                            <constraint firstItem="X2N-RA-vkS" firstAttribute="trailing" secondItem="UG5-1k-9AE" secondAttribute="trailing" id="HfQ-pq-sfi"/>
+                            <constraint firstItem="MyO-cj-wbM" firstAttribute="leading" secondItem="47T-ie-XRb" secondAttribute="leading" constant="138" id="Hsu-hw-Tpc"/>
+                            <constraint firstItem="vs3-gc-Orm" firstAttribute="top" secondItem="UG5-1k-9AE" secondAttribute="bottom" constant="16" id="IQg-ae-PgI"/>
+                            <constraint firstItem="47T-ie-XRb" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BYo-6A-b0h" secondAttribute="trailing" symbolic="YES" id="Ijb-aX-8R1"/>
+                            <constraint firstItem="g6J-bm-xyv" firstAttribute="top" secondItem="X2N-RA-vkS" secondAttribute="bottom" constant="15" id="Mm9-8e-7bn"/>
+                            <constraint firstItem="3Fp-VR-dr6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UG5-1k-9AE" secondAttribute="trailing" constant="8" symbolic="YES" id="NtB-ry-4lX"/>
+                            <constraint firstItem="UG5-1k-9AE" firstAttribute="top" secondItem="g6J-bm-xyv" secondAttribute="bottom" constant="26" id="Pbv-QF-zMx"/>
+                            <constraint firstItem="eze-Zk-ec6" firstAttribute="top" secondItem="BYo-6A-b0h" secondAttribute="bottom" constant="8" symbolic="YES" id="PoC-l9-w8g"/>
+                            <constraint firstItem="vs3-gc-Orm" firstAttribute="leading" secondItem="60J-P5-WFI" secondAttribute="leading" id="QfZ-E8-3nS"/>
+                            <constraint firstItem="47T-ie-XRb" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ALe-zy-aya" secondAttribute="trailing" symbolic="YES" id="RTT-0x-Mce"/>
+                            <constraint firstItem="g6J-bm-xyv" firstAttribute="top" secondItem="LbK-e2-Ipo" secondAttribute="bottom" constant="48" id="UON-pB-R8T"/>
+                            <constraint firstItem="eze-Zk-ec6" firstAttribute="leading" secondItem="VLg-8X-zCi" secondAttribute="leading" id="Ur8-Il-hNM"/>
+                            <constraint firstItem="47T-ie-XRb" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LbK-e2-Ipo" secondAttribute="trailing" symbolic="YES" id="Zfx-3C-Sz5"/>
+                            <constraint firstItem="vs3-gc-Orm" firstAttribute="top" secondItem="ALe-zy-aya" secondAttribute="bottom" constant="49" id="bhe-nF-w3V"/>
+                            <constraint firstItem="Fqo-Do-G7o" firstAttribute="centerX" secondItem="uAs-uM-UPq" secondAttribute="centerX" id="cpN-3N-q4M"/>
+                            <constraint firstItem="UG5-1k-9AE" firstAttribute="leading" secondItem="vs3-gc-Orm" secondAttribute="leading" id="hUI-pU-v4A"/>
+                            <constraint firstItem="47T-ie-XRb" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vs3-gc-Orm" secondAttribute="trailing" symbolic="YES" id="j5B-jE-aNv"/>
+                            <constraint firstItem="g6J-bm-xyv" firstAttribute="leading" secondItem="ALe-zy-aya" secondAttribute="leading" id="jzh-dc-NbJ"/>
+                            <constraint firstItem="LbK-e2-Ipo" firstAttribute="leading" secondItem="X2N-RA-vkS" secondAttribute="leading" id="kfo-XS-BrE"/>
+                            <constraint firstItem="VLg-8X-zCi" firstAttribute="leading" secondItem="LbK-e2-Ipo" secondAttribute="leading" id="lBO-j8-hpU"/>
+                            <constraint firstItem="Fqo-Do-G7o" firstAttribute="centerX" secondItem="MyO-cj-wbM" secondAttribute="centerX" id="lzy-U6-fdW"/>
+                            <constraint firstItem="47T-ie-XRb" firstAttribute="bottom" secondItem="3Fp-VR-dr6" secondAttribute="bottom" constant="251" id="mP7-wP-Gmf"/>
+                            <constraint firstItem="BYo-6A-b0h" firstAttribute="leading" secondItem="eze-Zk-ec6" secondAttribute="leading" id="n7Q-eb-j3t"/>
+                            <constraint firstItem="ALe-zy-aya" firstAttribute="top" secondItem="g6J-bm-xyv" secondAttribute="bottom" constant="8" id="nyX-Ui-hyH"/>
+                            <constraint firstItem="Fqo-Do-G7o" firstAttribute="leading" secondItem="47T-ie-XRb" secondAttribute="leading" constant="50" id="pjP-zQ-d4z"/>
+                            <constraint firstItem="47T-ie-XRb" firstAttribute="trailing" secondItem="VLg-8X-zCi" secondAttribute="trailing" constant="215" id="qdk-rh-HEK"/>
+                            <constraint firstItem="Fqo-Do-G7o" firstAttribute="top" secondItem="47T-ie-XRb" secondAttribute="top" constant="19" id="qve-Ga-rdI"/>
+                            <constraint firstItem="BYo-6A-b0h" firstAttribute="leading" secondItem="47T-ie-XRb" secondAttribute="leading" constant="30" id="xxB-r7-vJl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="47T-ie-XRb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LGL-B0-vz3"/>
+                    <connections>
+                        <outlet property="EndDay" destination="UG5-1k-9AE" id="p1h-be-oqy"/>
+                        <outlet property="EndTime" destination="60J-P5-WFI" id="R3f-Qp-D2l"/>
+                        <outlet property="HelpLabel" destination="3Fp-VR-dr6" id="vXV-Sg-ObE"/>
+                        <outlet property="SaveButton" destination="MyO-cj-wbM" id="BS1-Uq-4IP"/>
+                        <outlet property="ShiftPicker" destination="Fqo-Do-G7o" id="qdt-fS-y8x"/>
+                        <outlet property="StartDay" destination="VLg-8X-zCi" id="9jZ-s3-yud"/>
+                        <outlet property="StartTime" destination="X2N-RA-vkS" id="C0X-LN-TjK"/>
+                        <outlet property="TimeLabel1" destination="LbK-e2-Ipo" id="sbv-dS-bGQ"/>
+                        <outlet property="TimeLabel2" destination="vs3-gc-Orm" id="nku-u9-3NZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EdZ-5U-qzW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261.60000000000002" y="1278.7106446776613"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="VjB-Jv-Aqa">
+            <objects>
+                <navigationController id="hZN-7B-Ngb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="WjV-FK-Gyp"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="514-D5-lGj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="C2H-v9-jdT" kind="relationship" relationship="rootViewController" id="e1B-bs-cqE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T7r-iN-6oj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="-275"/>
+        </scene>
+        <!--WorkedVC-->
+        <scene sceneID="cwP-7S-4GX">
+            <objects>
+                <viewController interfaceStyle="dark" id="XWL-Xh-tdp" customClass="WorkedVC" customModule="Směnář" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="aso-h7-13E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Xz-hq-aY7">
+                                <rect key="frame" x="0.0" y="183" width="414" height="630"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyTableCell" rowHeight="86" id="NOi-Dd-2M3" customClass="MyTableCell" customModule="Směnář" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="86"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NOi-Dd-2M3" id="QrL-tU-LPS" userLabel="ShiftCell">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cBH-NY-xyT">
+                                                    <rect key="frame" x="0.0" y="2" width="80" height="82"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Konec: 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmP-7I-tln">
+                                                    <rect key="frame" x="88" y="57" width="91.666666666666686" height="18"/>
+                                                    <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Začátek: 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmg-sn-cmu">
+                                                    <rect key="frame" x="88" y="15" width="91.666666666666686" height="18"/>
+                                                    <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cD-zG-zFy">
+                                                    <rect key="frame" x="374" y="31" width="19" height="22"/>
+                                                    <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" image="trash" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="trashButtonTapped:" destination="XWL-Xh-tdp" eventType="touchUpInside" id="Ydp-Oa-3dw"/>
+                                                        <action selector="trashButtonTapped:" destination="tQl-nw-ThM" eventType="touchUpInside" id="e18-kr-LpO"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Den:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0h-59-3Vt">
+                                                    <rect key="frame" x="222" y="35" width="26" height="18"/>
+                                                    <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                                    <color key="textColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0039215686269999999" green="0.0039215686269999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="hmg-sn-cmu" firstAttribute="leading" secondItem="QrL-tU-LPS" secondAttribute="leading" constant="88" id="07L-zi-q5u"/>
+                                                <constraint firstItem="hmg-sn-cmu" firstAttribute="leading" secondItem="cBH-NY-xyT" secondAttribute="trailing" constant="8" id="3xM-va-MCf"/>
+                                                <constraint firstItem="cBH-NY-xyT" firstAttribute="centerY" secondItem="o0h-59-3Vt" secondAttribute="centerY" constant="-1" id="D8E-Wf-usa"/>
+                                                <constraint firstItem="cBH-NY-xyT" firstAttribute="leading" secondItem="QrL-tU-LPS" secondAttribute="leadingMargin" constant="-20" id="NIS-cM-eeX"/>
+                                                <constraint firstItem="o0h-59-3Vt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cBH-NY-xyT" secondAttribute="trailing" constant="8" symbolic="YES" id="QF3-xw-Mi3"/>
+                                                <constraint firstItem="cBH-NY-xyT" firstAttribute="top" secondItem="QrL-tU-LPS" secondAttribute="topMargin" constant="-9" id="UR3-sV-ADy"/>
+                                                <constraint firstAttribute="trailing" secondItem="o0h-59-3Vt" secondAttribute="trailing" constant="166" id="XWi-2S-YvL"/>
+                                                <constraint firstItem="gmP-7I-tln" firstAttribute="top" secondItem="hmg-sn-cmu" secondAttribute="bottom" constant="24" id="glt-qC-E8O"/>
+                                                <constraint firstItem="cBH-NY-xyT" firstAttribute="centerY" secondItem="QrL-tU-LPS" secondAttribute="centerY" id="idi-FO-KlO"/>
+                                                <constraint firstItem="4cD-zG-zFy" firstAttribute="leading" secondItem="o0h-59-3Vt" secondAttribute="trailing" constant="126" id="jIA-hy-XzU"/>
+                                                <constraint firstItem="hmg-sn-cmu" firstAttribute="leading" secondItem="gmP-7I-tln" secondAttribute="leading" id="lNl-qm-jmq"/>
+                                                <constraint firstItem="hmg-sn-cmu" firstAttribute="trailing" secondItem="gmP-7I-tln" secondAttribute="trailing" id="s2D-2u-mCz"/>
+                                                <constraint firstItem="4cD-zG-zFy" firstAttribute="top" secondItem="QrL-tU-LPS" secondAttribute="topMargin" constant="20" id="w1z-Nb-Lb0"/>
+                                                <constraint firstItem="hmg-sn-cmu" firstAttribute="top" secondItem="QrL-tU-LPS" secondAttribute="topMargin" constant="4" id="ytC-Iy-bFz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0039215686269999999" green="0.0039215686269999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="MyImage" destination="cBH-NY-xyT" id="lEo-h2-2jJ"/>
+                                            <outlet property="ShiftCell" destination="QrL-tU-LPS" id="nko-7D-Jgg"/>
+                                            <outlet property="ShiftDay" destination="o0h-59-3Vt" id="Od3-iR-BKs"/>
+                                            <outlet property="ShiftEnd" destination="gmP-7I-tln" id="aGU-Lq-DtY"/>
+                                            <outlet property="ShiftStart" destination="hmg-sn-cmu" id="fSG-1W-USQ"/>
+                                            <outlet property="TrashButton" destination="4cD-zG-zFy" id="vuA-ol-LUe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhR-5I-7Ii">
+                                <rect key="frame" x="322" y="132" width="30" height="30"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                <state key="normal" title="Další">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Next:" destination="XWL-Xh-tdp" eventType="touchUpInside" id="woq-SD-sx0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEv-xN-pd2">
+                                <rect key="frame" x="188" y="128" width="38" height="38"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHW-eT-2kz">
+                                <rect key="frame" x="45" y="132" width="65" height="30"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                <state key="normal" title="Předchozí">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Previous:" destination="XWL-Xh-tdp" eventType="touchUpInside" id="8NC-13-k3e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0031235921200000001" green="0.0" blue="0.1563912928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uhR-5I-7Ii" firstAttribute="top" secondItem="OGy-OE-3cr" secondAttribute="top" constant="44" id="0CT-Yp-PwU"/>
+                            <constraint firstItem="qHW-eT-2kz" firstAttribute="leading" secondItem="OGy-OE-3cr" secondAttribute="leading" constant="45" id="6BG-A7-9lv"/>
+                            <constraint firstItem="1Xz-hq-aY7" firstAttribute="top" secondItem="uhR-5I-7Ii" secondAttribute="bottom" constant="21" id="6Le-4y-3FY"/>
+                            <constraint firstItem="1Xz-hq-aY7" firstAttribute="leading" secondItem="OGy-OE-3cr" secondAttribute="leading" id="82f-68-ZRE"/>
+                            <constraint firstItem="1Xz-hq-aY7" firstAttribute="centerX" secondItem="FEv-xN-pd2" secondAttribute="centerX" id="BAs-57-QSn"/>
+                            <constraint firstItem="uhR-5I-7Ii" firstAttribute="baseline" secondItem="qHW-eT-2kz" secondAttribute="baseline" id="MPU-Mw-Vdy"/>
+                            <constraint firstItem="OGy-OE-3cr" firstAttribute="trailing" secondItem="uhR-5I-7Ii" secondAttribute="trailing" constant="62" id="NhD-jj-T2X"/>
+                            <constraint firstItem="1Xz-hq-aY7" firstAttribute="centerX" secondItem="aso-h7-13E" secondAttribute="centerX" id="OEK-6o-GcV"/>
+                            <constraint firstItem="FEv-xN-pd2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qHW-eT-2kz" secondAttribute="trailing" id="WJY-KB-6fI"/>
+                            <constraint firstItem="1Xz-hq-aY7" firstAttribute="top" secondItem="FEv-xN-pd2" secondAttribute="bottom" constant="17" id="YaZ-kp-441"/>
+                            <constraint firstItem="uhR-5I-7Ii" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FEv-xN-pd2" secondAttribute="trailing" id="c1O-Yg-AWE"/>
+                            <constraint firstItem="1Xz-hq-aY7" firstAttribute="bottom" secondItem="OGy-OE-3cr" secondAttribute="bottom" id="qlC-fQ-r01"/>
+                            <constraint firstItem="uhR-5I-7Ii" firstAttribute="centerY" secondItem="FEv-xN-pd2" secondAttribute="centerY" id="yMd-Iy-ZP0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OGy-OE-3cr"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JB4-x9-fQX"/>
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="MonthLabel" destination="FEv-xN-pd2" id="qMj-vw-xBN"/>
+                        <outlet property="NextButton" destination="uhR-5I-7Ii" id="wO5-ha-BgL"/>
+                        <outlet property="tableView" destination="1Xz-hq-aY7" id="oD2-kD-6fh"/>
+                        <segue destination="NAH-Ku-keh" kind="show" identifier="shiftDetail" id="UGk-rC-Lh0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JS0-YR-yXQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986.95652173913049" y="447.99107142857139"/>
+        </scene>
+        <!--Přehled-->
+        <scene sceneID="rAz-vD-UjE">
+            <objects>
+                <viewController interfaceStyle="dark" id="v1N-tD-umH" customClass="OverviewVC" customModule="Směnář" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rhw-Bh-M42" customClass="over">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nejbližší budoucí směna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AaK-mA-tA8">
+                                <rect key="frame" x="25" y="88" width="202" height="56"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Odpracováno tento měsíc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="kWg-B3-Qph">
+                                <rect key="frame" x="25" y="278" width="215" height="24"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Začátek" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="BNg-sK-9o9">
+                                <rect key="frame" x="25" y="202" width="57" height="20"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Počet hodin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="yPC-GO-5ux">
+                                <rect key="frame" x="25" y="315" width="82" height="20"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Čerpáno tento měsíc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="5Tc-Pn-wbJ">
+                                <rect key="frame" x="25" y="537" width="145" height="20"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zbývající v tomto roce" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="bcX-2F-aI0">
+                                <rect key="frame" x="220" y="539" width="161" height="20"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peníze" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="CLI-aB-wg9">
+                                <rect key="frame" x="25" y="427" width="48" height="20"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stravenky" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="z0r-ix-tb3">
+                                <rect key="frame" x="220" y="427" width="74" height="20"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Částka" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="XSi-We-QCP">
+                                <rect key="frame" x="25" y="463" width="73.666666666666671" height="20"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CZK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="tGW-hi-ECM">
+                                <rect key="frame" x="107.66666666666667" y="463" width="23.000000000000014" height="18"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Částka" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="dXV-Al-8g5">
+                                <rect key="frame" x="220" y="463" width="74" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="1p5-L1-l80"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CZK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="7NG-RB-gkd">
+                                <rect key="frame" x="303" y="463" width="23" height="18"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Počet dnů" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="8fk-nm-pk2">
+                                <rect key="frame" x="275" y="574" width="74" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="f6a-HN-R7V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dnů" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hlq-5i-vHH">
+                                <rect key="frame" x="357" y="575" width="24" height="18"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Počet dní" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="YDS-nZ-aVh">
+                                <rect key="frame" x="220" y="315" width="66" height="20"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZačátekČas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="bvq-a4-RrU">
+                                <rect key="frame" x="25" y="237" width="73.666666666666671" height="18"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PočetHodin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="zlI-Bp-xgj">
+                                <rect key="frame" x="25" y="353" width="71" height="18"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PočetDní" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Lcg-6F-qZR">
+                                <rect key="frame" x="220" y="353" width="56" height="18"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Konec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="LUY-U8-6HM">
+                                <rect key="frame" x="220" y="202" width="43" height="20"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KonecČas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="qyS-ss-CEt">
+                                <rect key="frame" x="220" y="237" width="61" height="18"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vyděláno tento měsíc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="z3T-6n-njd">
+                                <rect key="frame" x="25" y="395" width="181" height="24"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dnů" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ck4-7L-jME">
+                                <rect key="frame" x="146.66666666666666" y="576" width="24" height="18"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dovolená" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="dHA-cO-oAo">
+                                <rect key="frame" x="25" y="505" width="76" height="24"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Počet dnů" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="hDO-mu-ZRg">
+                                <rect key="frame" x="64" y="575" width="73.666666666666686" height="20"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="XMh-TI-A0o">
+                                <rect key="frame" x="25" y="141" width="44" height="20"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Hgv-xh-xsj">
+                                <rect key="frame" x="25" y="169" width="40" height="18"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TypSmeny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="H2Z-gl-UbF">
+                                <rect key="frame" x="220" y="169" width="64" height="18"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.0" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="H2Z-gl-UbF" firstAttribute="leading" secondItem="8fk-nm-pk2" secondAttribute="leading" constant="-55" id="0Yx-PP-49n"/>
+                            <constraint firstItem="7NG-RB-gkd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dXV-Al-8g5" secondAttribute="trailing" constant="8" symbolic="YES" id="1Sb-tD-LGc"/>
+                            <constraint firstItem="bvq-a4-RrU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hDO-mu-ZRg" secondAttribute="leading" constant="-39" id="1b9-bF-ibf"/>
+                            <constraint firstItem="XMh-TI-A0o" firstAttribute="top" secondItem="AaK-mA-tA8" secondAttribute="bottom" constant="-3" id="1hj-8P-C1D"/>
+                            <constraint firstItem="8fk-nm-pk2" firstAttribute="top" secondItem="bcX-2F-aI0" secondAttribute="bottom" constant="15" id="26C-Ae-1td"/>
+                            <constraint firstItem="qyS-ss-CEt" firstAttribute="baseline" secondItem="bvq-a4-RrU" secondAttribute="baseline" id="2SI-AO-MmT"/>
+                            <constraint firstItem="7p6-ec-7ZW" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kWg-B3-Qph" secondAttribute="trailing" symbolic="YES" id="2yV-uc-yLc"/>
+                            <constraint firstItem="7p6-ec-7ZW" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="z3T-6n-njd" secondAttribute="trailing" symbolic="YES" id="53S-f7-ozM"/>
+                            <constraint firstItem="Hgv-xh-xsj" firstAttribute="top" secondItem="XMh-TI-A0o" secondAttribute="bottom" constant="8" id="559-45-OdI"/>
+                            <constraint firstItem="Lcg-6F-qZR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zlI-Bp-xgj" secondAttribute="trailing" constant="8" symbolic="YES" id="6Ub-8Q-Fvw"/>
+                            <constraint firstItem="dHA-cO-oAo" firstAttribute="top" secondItem="XSi-We-QCP" secondAttribute="bottom" constant="22" id="6VS-IJ-WcY"/>
+                            <constraint firstItem="bvq-a4-RrU" firstAttribute="leading" secondItem="rhw-Bh-M42" secondAttribute="leadingMargin" constant="5" id="Bgt-Yr-Ue0"/>
+                            <constraint firstItem="dXV-Al-8g5" firstAttribute="top" secondItem="z0r-ix-tb3" secondAttribute="bottom" constant="16" id="CjL-zQ-an8"/>
+                            <constraint firstItem="7p6-ec-7ZW" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XMh-TI-A0o" secondAttribute="trailing" symbolic="YES" id="Dxb-aw-acP"/>
+                            <constraint firstItem="8fk-nm-pk2" firstAttribute="baseline" secondItem="hDO-mu-ZRg" secondAttribute="baseline" constant="-1" id="EKa-BB-fUP"/>
+                            <constraint firstItem="H2Z-gl-UbF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bcX-2F-aI0" secondAttribute="leading" constant="-35" id="EXI-Qq-VxF"/>
+                            <constraint firstItem="7p6-ec-7ZW" firstAttribute="trailing" secondItem="H2Z-gl-UbF" secondAttribute="trailing" constant="130" id="GCM-a5-VCn"/>
+                            <constraint firstItem="H2Z-gl-UbF" firstAttribute="baseline" secondItem="Hgv-xh-xsj" secondAttribute="baseline" id="GYu-Ft-NyL"/>
+                            <constraint firstItem="H2Z-gl-UbF" firstAttribute="leading" secondItem="YDS-nZ-aVh" secondAttribute="leading" id="Gi5-eq-OwM"/>
+                            <constraint firstItem="H2Z-gl-UbF" firstAttribute="top" secondItem="AaK-mA-tA8" secondAttribute="bottom" constant="25" id="Gm0-EL-dUD"/>
+                            <constraint firstItem="bvq-a4-RrU" firstAttribute="leading" secondItem="CLI-aB-wg9" secondAttribute="leading" id="K4Y-wM-B3L"/>
+                            <constraint firstItem="bvq-a4-RrU" firstAttribute="leading" secondItem="z3T-6n-njd" secondAttribute="leading" id="K7b-yv-PyO"/>
+                            <constraint firstItem="bvq-a4-RrU" firstAttribute="leading" secondItem="kWg-B3-Qph" secondAttribute="leading" id="KVr-WN-UDd"/>
+                            <constraint firstItem="hlq-5i-vHH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8fk-nm-pk2" secondAttribute="trailing" constant="8" symbolic="YES" id="Kpr-1b-6wZ"/>
+                            <constraint firstItem="7p6-ec-7ZW" firstAttribute="trailing" secondItem="hlq-5i-vHH" secondAttribute="trailing" constant="33" id="LdS-FI-CJG"/>
+                            <constraint firstItem="7p6-ec-7ZW" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dHA-cO-oAo" secondAttribute="trailing" symbolic="YES" id="MQR-UN-NGH"/>
+                            <constraint firstItem="bvq-a4-RrU" firstAttribute="leading" secondItem="zlI-Bp-xgj" secondAttribute="leading" id="MWu-wp-hsO"/>
+                            <constraint firstItem="H2Z-gl-UbF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Hgv-xh-xsj" secondAttribute="trailing" constant="8" symbolic="YES" id="No9-xm-blR"/>
+                            <constraint firstItem="z0r-ix-tb3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CLI-aB-wg9" secondAttribute="trailing" constant="8" symbolic="YES" id="OtU-4q-9mx"/>
+                            <constraint firstItem="YDS-nZ-aVh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yPC-GO-5ux" secondAttribute="trailing" constant="8" symbolic="YES" id="QGy-2c-spx"/>
+                            <constraint firstItem="bvq-a4-RrU" firstAttribute="leading" secondItem="BNg-sK-9o9" secondAttribute="leading" id="QpE-Ht-odW"/>
+                            <constraint firstItem="8fk-nm-pk2" firstAttribute="firstBaseline" secondItem="hDO-mu-ZRg" secondAttribute="firstBaseline" constant="-1" id="RBm-qW-XT1"/>
+                            <constraint firstItem="dXV-Al-8g5" firstAttribute="firstBaseline" secondItem="tGW-hi-ECM" secondAttribute="baseline" id="Rbf-T3-oBy"/>
+                            <constraint firstItem="kWg-B3-Qph" firstAttribute="top" secondItem="qyS-ss-CEt" secondAttribute="bottom" constant="23" id="Rfp-QH-q1d"/>
+                            <constraint firstItem="7p6-ec-7ZW" firstAttribute="trailing" secondItem="qyS-ss-CEt" secondAttribute="trailing" constant="133" id="Roj-gF-7Fb"/>
+                            <constraint firstItem="dXV-Al-8g5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tGW-hi-ECM" secondAttribute="trailing" constant="8" symbolic="YES" id="Rsn-we-viN"/>
+                            <constraint firstItem="8fk-nm-pk2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ck4-7L-jME" secondAttribute="trailing" constant="8" symbolic="YES" id="S1e-Ws-8hG"/>
+                            <constraint firstItem="7p6-ec-7ZW" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AaK-mA-tA8" secondAttribute="trailing" symbolic="YES" id="SwU-me-14t"/>
+                            <constraint firstItem="H2Z-gl-UbF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qyS-ss-CEt" secondAttribute="leading" id="Swx-fX-kRR"/>
+                            <constraint firstItem="bcX-2F-aI0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5Tc-Pn-wbJ" secondAttribute="trailing" constant="8" symbolic="YES" id="TDG-S6-e3Z"/>
+                            <constraint firstItem="H2Z-gl-UbF" firstAttribute="leading" secondItem="dXV-Al-8g5" secondAttribute="leading" id="UBc-SE-UP7"/>
+                            <constraint firstItem="7p6-ec-7ZW" firstAttribute="trailing" secondItem="7NG-RB-gkd" secondAttribute="trailing" constant="88" id="Uhe-xc-eLu"/>
+                            <constraint firstItem="bvq-a4-RrU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XSi-We-QCP" secondAttribute="leading" id="Uzm-f8-QqA"/>
+                            <constraint firstItem="LUY-U8-6HM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BNg-sK-9o9" secondAttribute="trailing" constant="8" symbolic="YES" id="VeW-ef-0vN"/>
+                            <constraint firstItem="dXV-Al-8g5" firstAttribute="firstBaseline" secondItem="XSi-We-QCP" secondAttribute="firstBaseline" id="WBT-88-Vi9"/>
+                            <constraint firstItem="Lcg-6F-qZR" firstAttribute="top" secondItem="rhw-Bh-M42" secondAttribute="top" constant="353" id="WD4-Vg-Kio"/>
+                            <constraint firstItem="z0r-ix-tb3" firstAttribute="top" secondItem="Lcg-6F-qZR" secondAttribute="bottom" constant="56" id="Xrz-es-Zb5"/>
+                            <constraint firstItem="H2Z-gl-UbF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LUY-U8-6HM" secondAttribute="leading" id="Y1D-1J-bYj"/>
+                            <constraint firstItem="bvq-a4-RrU" firstAttribute="leading" secondItem="AaK-mA-tA8" secondAttribute="leading" id="a6u-ve-h04"/>
+                            <constraint firstItem="LUY-U8-6HM" firstAttribute="top" secondItem="H2Z-gl-UbF" secondAttribute="bottom" constant="15" id="adk-zZ-ira"/>
+                            <constraint firstItem="7p6-ec-7ZW" firstAttribute="trailing" secondItem="Lcg-6F-qZR" secondAttribute="trailing" constant="138" id="aeg-yn-vWQ"/>
+                            <constraint firstItem="bvq-a4-RrU" firstAttribute="top" secondItem="BNg-sK-9o9" secondAttribute="bottom" constant="15" id="br9-Hg-QXK"/>
+                            <constraint firstItem="H2Z-gl-UbF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Lcg-6F-qZR" secondAttribute="leading" id="cVn-qQ-FUA"/>
+                            <constraint firstItem="7p6-ec-7ZW" firstAttribute="trailing" secondItem="bcX-2F-aI0" secondAttribute="trailing" constant="33" id="egR-Sm-Ewb"/>
+                            <constraint firstItem="qyS-ss-CEt" firstAttribute="top" secondItem="LUY-U8-6HM" secondAttribute="bottom" constant="15" id="f35-U9-Xij"/>
+                            <constraint firstItem="dXV-Al-8g5" firstAttribute="baseline" secondItem="XSi-We-QCP" secondAttribute="baseline" id="fcy-wL-d1d"/>
+                            <constraint firstItem="8fk-nm-pk2" firstAttribute="centerY" secondItem="hlq-5i-vHH" secondAttribute="centerY" id="hOR-CD-aAg"/>
+                            <constraint firstItem="bvq-a4-RrU" firstAttribute="leading" secondItem="yPC-GO-5ux" secondAttribute="leading" id="hYa-EH-dM8"/>
+                            <constraint firstItem="Lcg-6F-qZR" firstAttribute="top" secondItem="YDS-nZ-aVh" secondAttribute="bottom" constant="18" id="haQ-jj-MYB"/>
+                            <constraint firstItem="5Tc-Pn-wbJ" firstAttribute="top" secondItem="dHA-cO-oAo" secondAttribute="bottom" constant="8" id="hvz-9U-1CA"/>
+                            <constraint firstItem="AaK-mA-tA8" firstAttribute="top" secondItem="7p6-ec-7ZW" secondAttribute="top" id="iGv-B7-FY1"/>
+                            <constraint firstItem="H2Z-gl-UbF" firstAttribute="leading" secondItem="z0r-ix-tb3" secondAttribute="leading" id="jm6-nn-IQH"/>
+                            <constraint firstItem="bvq-a4-RrU" firstAttribute="centerX" secondItem="hDO-mu-ZRg" secondAttribute="centerX" constant="-39" id="lVC-BC-uHc"/>
+                            <constraint firstItem="bvq-a4-RrU" firstAttribute="leading" secondItem="dHA-cO-oAo" secondAttribute="leading" id="nde-qO-0iQ"/>
+                            <constraint firstItem="dXV-Al-8g5" firstAttribute="trailing" secondItem="8fk-nm-pk2" secondAttribute="trailing" constant="-55" id="pKD-em-iCs"/>
+                            <constraint firstItem="bcX-2F-aI0" firstAttribute="top" secondItem="dXV-Al-8g5" secondAttribute="bottom" constant="56" id="qEW-mo-4S7"/>
+                            <constraint firstItem="bvq-a4-RrU" firstAttribute="centerX" secondItem="XSi-We-QCP" secondAttribute="centerX" id="qzR-Uv-NUC"/>
+                            <constraint firstItem="8fk-nm-pk2" firstAttribute="centerY" secondItem="ck4-7L-jME" secondAttribute="centerY" constant="-1" id="r6Z-Rq-Y3d"/>
+                            <constraint firstItem="dXV-Al-8g5" firstAttribute="firstBaseline" secondItem="7NG-RB-gkd" secondAttribute="baseline" id="s2v-cm-AXd"/>
+                            <constraint firstItem="bvq-a4-RrU" firstAttribute="leading" secondItem="Hgv-xh-xsj" secondAttribute="leading" id="tQF-sz-dlJ"/>
+                            <constraint firstItem="7p6-ec-7ZW" firstAttribute="trailing" secondItem="YDS-nZ-aVh" secondAttribute="trailing" constant="128" id="tZ8-jQ-Bxr"/>
+                            <constraint firstItem="bvq-a4-RrU" firstAttribute="leading" secondItem="5Tc-Pn-wbJ" secondAttribute="leading" id="tZO-u3-CUA"/>
+                            <constraint firstItem="yPC-GO-5ux" firstAttribute="baseline" secondItem="YDS-nZ-aVh" secondAttribute="baseline" id="uZp-AF-Mre"/>
+                            <constraint firstItem="7p6-ec-7ZW" firstAttribute="trailing" secondItem="LUY-U8-6HM" secondAttribute="trailing" constant="151" id="v53-T6-Uu4"/>
+                            <constraint firstItem="ck4-7L-jME" firstAttribute="leading" secondItem="hDO-mu-ZRg" secondAttribute="trailing" constant="9" id="v5m-4z-658"/>
+                            <constraint firstItem="dXV-Al-8g5" firstAttribute="centerX" secondItem="z0r-ix-tb3" secondAttribute="centerX" id="vRW-ZX-Dho"/>
+                            <constraint firstItem="Lcg-6F-qZR" firstAttribute="baseline" secondItem="zlI-Bp-xgj" secondAttribute="baseline" id="vUj-TK-A12"/>
+                            <constraint firstItem="bvq-a4-RrU" firstAttribute="leading" secondItem="XMh-TI-A0o" secondAttribute="leading" id="wXN-GA-6cZ"/>
+                            <constraint firstItem="H2Z-gl-UbF" firstAttribute="top" secondItem="rhw-Bh-M42" secondAttribute="top" constant="169" id="z7a-Zb-Caw"/>
+                            <constraint firstItem="CLI-aB-wg9" firstAttribute="top" secondItem="z3T-6n-njd" secondAttribute="bottom" constant="8" id="zEP-Al-eMs"/>
+                            <constraint firstItem="tGW-hi-ECM" firstAttribute="leading" secondItem="XSi-We-QCP" secondAttribute="trailing" constant="9" id="zFh-t0-r2S"/>
+                            <constraint firstItem="z3T-6n-njd" firstAttribute="top" secondItem="zlI-Bp-xgj" secondAttribute="bottom" constant="24" id="zuZ-jV-QhA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7p6-ec-7ZW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="1" title="Přehled" image="house" catalog="system" landscapeImage="house" largeContentSizeImage="house" id="Gz2-E6-SBJ"/>
+                    <navigationItem key="navigationItem" id="NYU-cv-4ck">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="gear" catalog="system" id="HUB-ud-57g">
+                            <connections>
+                                <segue destination="Lol-DE-tfX" kind="show" id="Twn-1t-dwS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="DayCounter" destination="Lcg-6F-qZR" id="cNN-ej-fyp"/>
+                        <outlet property="HMDays" destination="ck4-7L-jME" id="HaI-H0-uyM"/>
+                        <outlet property="HRDays" destination="hlq-5i-vHH" id="P4D-b2-Ig1"/>
+                        <outlet property="HolidayMonth" destination="hDO-mu-ZRg" id="hAL-0m-4n9"/>
+                        <outlet property="HolidayRest" destination="8fk-nm-pk2" id="8vo-LW-WdZ"/>
+                        <outlet property="HourCounter" destination="zlI-Bp-xgj" id="h2H-03-uZK"/>
+                        <outlet property="Luncheon" destination="dXV-Al-8g5" id="UHn-DB-rOq"/>
+                        <outlet property="LuncheonCurrency" destination="7NG-RB-gkd" id="ow1-66-mhF"/>
+                        <outlet property="LuncheonLabel" destination="z0r-ix-tb3" id="q0c-sY-4Je"/>
+                        <outlet property="Salary" destination="XSi-We-QCP" id="yYX-he-apW"/>
+                        <outlet property="ShiftDate" destination="Hgv-xh-xsj" id="bGZ-Rl-g5g"/>
+                        <outlet property="ShiftEndTime" destination="qyS-ss-CEt" id="7R0-EZ-c3N"/>
+                        <outlet property="ShiftStartTime" destination="bvq-a4-RrU" id="lDT-yg-Dlu"/>
+                        <outlet property="ShiftType" destination="H2Z-gl-UbF" id="A76-gv-rrl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Co5-Z7-BAo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1311.2" y="447.52623688155927"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="NTy-Rz-tdn">
+            <objects>
+                <tabBarController interfaceStyle="dark" id="XrZ-cB-8Ie" sceneMemberID="viewController">
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qsl-FA-ru6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="h2q-pp-wNp" kind="relationship" relationship="viewControllers" id="WrG-2W-boe"/>
+                        <segue destination="8ga-Qk-fw3" kind="relationship" relationship="viewControllers" id="GuR-ac-CYx"/>
+                        <segue destination="hZN-7B-Ngb" kind="relationship" relationship="viewControllers" id="INi-qC-fpn"/>
+                        <segue destination="NUZ-Ej-Kde" kind="relationship" relationship="viewControllers" id="X8z-h2-Ugz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tfg-RO-Acw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-129" y="-1006"/>
+        </scene>
+        <!--Odpracováno-->
+        <scene sceneID="xDt-s1-3iZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NUZ-Ej-Kde" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="4" title="Odpracováno" image="dollarsign.circle" catalog="system" landscapeImage="dollarsign.circle" largeContentSizeImage="dollarsign.circle" id="iv3-AF-ter">
+                        <color key="badgeColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BBf-Mp-ish">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XWL-Xh-tdp" kind="relationship" relationship="rootViewController" id="j6Z-KX-zu5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8SV-7c-ZrE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986.95652173913049" y="-275.22321428571428"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="UGk-rC-Lh0"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
+    </resources>
+</document>

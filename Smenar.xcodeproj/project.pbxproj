@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72011E702441ED23007493CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72011E6F2441ED23007493CE /* AppDelegate.swift */; };
+		72011E722441ED23007493CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72011E712441ED23007493CE /* SceneDelegate.swift */; };
+		72011E742441ED23007493CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72011E732441ED23007493CE /* ViewController.swift */; };
+		72011E772441ED23007493CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72011E752441ED23007493CE /* Main.storyboard */; };
+		72011E7A2441ED23007493CE /* Smenar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72011E782441ED23007493CE /* Smenar.xcdatamodeld */; };
+		72011E7C2441ED27007493CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72011E7B2441ED27007493CE /* Assets.xcassets */; };
+		72011E7F2441ED27007493CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72011E7D2441ED27007493CE /* LaunchScreen.storyboard */; };
+		72011EF724431D91007493CE /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72011EF624431D91007493CE /* Calendar.swift */; };
+		72011F1F244C9058007493CE /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72011F1E244C9058007493CE /* CalendarVC.swift */; };
+		72011F43244C9839007493CE /* ShiftAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72011F42244C9838007493CE /* ShiftAddVC.swift */; };
+		72011F4624519817007493CE /* MHCoreData in Frameworks */ = {isa = PBXBuildFile; productRef = 72011F4524519817007493CE /* MHCoreData */; };
+		72011F492452ED2C007493CE /* GlobalCDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72011F482452ED2C007493CE /* GlobalCDModel.swift */; };
+		72011F532455A5E9007493CE /* CD-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72011F522455A5E9007493CE /* CD-Extensions.swift */; };
+		72148876246AC77300AAC1EB /* ShiftTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72148875246AC77300AAC1EB /* ShiftTableVC.swift */; };
+		72148878246D759200AAC1EB /* WorkedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72148877246D759200AAC1EB /* WorkedVC.swift */; };
+		724C6992246833FF00E30624 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724C6991246833FF00E30624 /* SettingsVC.swift */; };
+		724EEAC92472EDEB00744DD2 /* icon_29pt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEAB62472EDE800744DD2 /* icon_29pt@3x.png */; };
+		724EEACA2472EDEB00744DD2 /* icon_76pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEAB72472EDE800744DD2 /* icon_76pt.png */; };
+		724EEACB2472EDEB00744DD2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEAB82472EDE900744DD2 /* Icon.png */; };
+		724EEACC2472EDEB00744DD2 /* O-ICON.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEAB92472EDE900744DD2 /* O-ICON.png */; };
+		724EEACD2472EDEB00744DD2 /* Icon_w.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEABA2472EDE900744DD2 /* Icon_w.png */; };
+		724EEACE2472EDEB00744DD2 /* icon_20pt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEABB2472EDE900744DD2 /* icon_20pt@3x.png */; };
+		724EEACF2472EDEB00744DD2 /* icon_40pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEABC2472EDE900744DD2 /* icon_40pt.png */; };
+		724EEAD02472EDEB00744DD2 /* icon_20pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEABD2472EDE900744DD2 /* icon_20pt@2x.png */; };
+		724EEAD12472EDEB00744DD2 /* icon_29pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEABE2472EDE900744DD2 /* icon_29pt@2x.png */; };
+		724EEAD22472EDEB00744DD2 /* icon_40pt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEABF2472EDE900744DD2 /* icon_40pt@3x.png */; };
+		724EEAD32472EDEB00744DD2 /* icon_60pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEAC02472EDEA00744DD2 /* icon_60pt@2x.png */; };
+		724EEAD42472EDEB00744DD2 /* icon_76pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEAC12472EDEA00744DD2 /* icon_76pt@2x.png */; };
+		724EEAD52472EDEB00744DD2 /* N-ICON.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEAC22472EDEA00744DD2 /* N-ICON.png */; };
+		724EEAD62472EDEB00744DD2 /* R-ICON.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEAC32472EDEA00744DD2 /* R-ICON.png */; };
+		724EEAD72472EDEB00744DD2 /* icon_29pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEAC42472EDEA00744DD2 /* icon_29pt.png */; };
+		724EEAD82472EDEB00744DD2 /* icon_60pt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEAC52472EDEA00744DD2 /* icon_60pt@3x.png */; };
+		724EEAD92472EDEB00744DD2 /* D-ICON.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEAC62472EDEA00744DD2 /* D-ICON.png */; };
+		724EEADA2472EDEB00744DD2 /* icon_40pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEAC72472EDEA00744DD2 /* icon_40pt@2x.png */; };
+		724EEADB2472EDEB00744DD2 /* icon_83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEAC82472EDEB00744DD2 /* icon_83.5@2x.png */; };
+		724EEADC2472EEC300744DD2 /* autobus-bold.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 724EEAB52472EDCD00744DD2 /* autobus-bold.regular.ttf */; };
+		72F486A4245A25990080B96F /* OverviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F486A3245A25990080B96F /* OverviewVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72011E862441ED27007493CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72011E642441ED23007493CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72011E6B2441ED23007493CE;
+			remoteInfo = Smenar;
+		};
+		72011E912441ED27007493CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72011E642441ED23007493CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72011E6B2441ED23007493CE;
+			remoteInfo = Smenar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		72011E6C2441ED23007493CE /* Směnář.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Směnář.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72011E6F2441ED23007493CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72011E712441ED23007493CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		72011E732441ED23007493CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72011E762441ED23007493CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72011E792441ED23007493CE /* Smenar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Smenar.xcdatamodel; sourceTree = "<group>"; };
+		72011E7B2441ED27007493CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72011E7E2441ED27007493CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72011E802441ED27007493CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72011E852441ED27007493CE /* SmenarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmenarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72011E902441ED27007493CE /* SmenarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmenarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72011EF624431D91007493CE /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		72011F1E244C9058007493CE /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		72011F42244C9838007493CE /* ShiftAddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftAddVC.swift; sourceTree = "<group>"; };
+		72011F482452ED2C007493CE /* GlobalCDModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalCDModel.swift; sourceTree = "<group>"; };
+		72011F522455A5E9007493CE /* CD-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CD-Extensions.swift"; sourceTree = "<group>"; };
+		72148875246AC77300AAC1EB /* ShiftTableVC.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ShiftTableVC.swift; sourceTree = "<group>"; tabWidth = 4; };
+		72148877246D759200AAC1EB /* WorkedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkedVC.swift; sourceTree = "<group>"; };
+		724C6991246833FF00E30624 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		724EEAB52472EDCD00744DD2 /* autobus-bold.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "autobus-bold.regular.ttf"; sourceTree = "<group>"; };
+		724EEAB62472EDE800744DD2 /* icon_29pt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_29pt@3x.png"; sourceTree = "<group>"; };
+		724EEAB72472EDE800744DD2 /* icon_76pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_76pt.png; sourceTree = "<group>"; };
+		724EEAB82472EDE900744DD2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		724EEAB92472EDE900744DD2 /* O-ICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "O-ICON.png"; sourceTree = "<group>"; };
+		724EEABA2472EDE900744DD2 /* Icon_w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_w.png; sourceTree = "<group>"; };
+		724EEABB2472EDE900744DD2 /* icon_20pt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_20pt@3x.png"; sourceTree = "<group>"; };
+		724EEABC2472EDE900744DD2 /* icon_40pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_40pt.png; sourceTree = "<group>"; };
+		724EEABD2472EDE900744DD2 /* icon_20pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_20pt@2x.png"; sourceTree = "<group>"; };
+		724EEABE2472EDE900744DD2 /* icon_29pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_29pt@2x.png"; sourceTree = "<group>"; };
+		724EEABF2472EDE900744DD2 /* icon_40pt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_40pt@3x.png"; sourceTree = "<group>"; };
+		724EEAC02472EDEA00744DD2 /* icon_60pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_60pt@2x.png"; sourceTree = "<group>"; };
+		724EEAC12472EDEA00744DD2 /* icon_76pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_76pt@2x.png"; sourceTree = "<group>"; };
+		724EEAC22472EDEA00744DD2 /* N-ICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "N-ICON.png"; sourceTree = "<group>"; };
+		724EEAC32472EDEA00744DD2 /* R-ICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "R-ICON.png"; sourceTree = "<group>"; };
+		724EEAC42472EDEA00744DD2 /* icon_29pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_29pt.png; sourceTree = "<group>"; };
+		724EEAC52472EDEA00744DD2 /* icon_60pt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_60pt@3x.png"; sourceTree = "<group>"; };
+		724EEAC62472EDEA00744DD2 /* D-ICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "D-ICON.png"; sourceTree = "<group>"; };
+		724EEAC72472EDEA00744DD2 /* icon_40pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_40pt@2x.png"; sourceTree = "<group>"; };
+		724EEAC82472EDEB00744DD2 /* icon_83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_83.5@2x.png"; sourceTree = "<group>"; };
+		72F486A3245A25990080B96F /* OverviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72011E692441ED23007493CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72011F4624519817007493CE /* MHCoreData in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72011E822441ED27007493CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72011E8D2441ED27007493CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72011E632441ED23007493CE = {
+			isa = PBXGroup;
+			children = (
+				72011E6E2441ED23007493CE /* Smenar */,
+				72011E6D2441ED23007493CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72011E6D2441ED23007493CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72011E6C2441ED23007493CE /* Směnář.app */,
+				72011E852441ED27007493CE /* SmenarTests.xctest */,
+				72011E902441ED27007493CE /* SmenarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72011E6E2441ED23007493CE /* Smenar */ = {
+			isa = PBXGroup;
+			children = (
+				72011F472452EAE9007493CE /* Model */,
+				72011F1D244C9036007493CE /* UI */,
+				72011F1A2449D0CA007493CE /* Fonts */,
+				72011EFA2449CB8C007493CE /* Icon */,
+				72011E712441ED23007493CE /* SceneDelegate.swift */,
+				72011E6F2441ED23007493CE /* AppDelegate.swift */,
+				72011E732441ED23007493CE /* ViewController.swift */,
+				72011E752441ED23007493CE /* Main.storyboard */,
+				72011E7D2441ED27007493CE /* LaunchScreen.storyboard */,
+				72011E7B2441ED27007493CE /* Assets.xcassets */,
+				72011E802441ED27007493CE /* Info.plist */,
+				72011E782441ED23007493CE /* Smenar.xcdatamodeld */,
+			);
+			path = Smenar;
+			sourceTree = "<group>";
+		};
+		72011EFA2449CB8C007493CE /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				724EEAC22472EDEA00744DD2 /* N-ICON.png */,
+				724EEAC32472EDEA00744DD2 /* R-ICON.png */,
+				724EEAC62472EDEA00744DD2 /* D-ICON.png */,
+				724EEABD2472EDE900744DD2 /* icon_20pt@2x.png */,
+				724EEABB2472EDE900744DD2 /* icon_20pt@3x.png */,
+				724EEAC42472EDEA00744DD2 /* icon_29pt.png */,
+				724EEABE2472EDE900744DD2 /* icon_29pt@2x.png */,
+				724EEAB62472EDE800744DD2 /* icon_29pt@3x.png */,
+				724EEABC2472EDE900744DD2 /* icon_40pt.png */,
+				724EEAC72472EDEA00744DD2 /* icon_40pt@2x.png */,
+				724EEABF2472EDE900744DD2 /* icon_40pt@3x.png */,
+				724EEAC02472EDEA00744DD2 /* icon_60pt@2x.png */,
+				724EEAC52472EDEA00744DD2 /* icon_60pt@3x.png */,
+				724EEAB72472EDE800744DD2 /* icon_76pt.png */,
+				724EEAC12472EDEA00744DD2 /* icon_76pt@2x.png */,
+				724EEAC82472EDEB00744DD2 /* icon_83.5@2x.png */,
+				724EEABA2472EDE900744DD2 /* Icon_w.png */,
+				724EEAB82472EDE900744DD2 /* Icon.png */,
+				724EEAB92472EDE900744DD2 /* O-ICON.png */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
+		72011F1A2449D0CA007493CE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				724EEAB52472EDCD00744DD2 /* autobus-bold.regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		72011F1D244C9036007493CE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				72011EF624431D91007493CE /* Calendar.swift */,
+				72011F1E244C9058007493CE /* CalendarVC.swift */,
+				72011F42244C9838007493CE /* ShiftAddVC.swift */,
+				72F486A3245A25990080B96F /* OverviewVC.swift */,
+				724C6991246833FF00E30624 /* SettingsVC.swift */,
+				72148875246AC77300AAC1EB /* ShiftTableVC.swift */,
+				72148877246D759200AAC1EB /* WorkedVC.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		72011F472452EAE9007493CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72011F482452ED2C007493CE /* GlobalCDModel.swift */,
+				72011F522455A5E9007493CE /* CD-Extensions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72011E6B2441ED23007493CE /* Smenar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72011E992441ED27007493CE /* Build configuration list for PBXNativeTarget "Smenar" */;
+			buildPhases = (
+				72011E682441ED23007493CE /* Sources */,
+				72011E692441ED23007493CE /* Frameworks */,
+				72011E6A2441ED23007493CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Smenar;
+			packageProductDependencies = (
+				72011F4524519817007493CE /* MHCoreData */,
+			);
+			productName = Smenar;
+			productReference = 72011E6C2441ED23007493CE /* Směnář.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72011E842441ED27007493CE /* SmenarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72011E9C2441ED27007493CE /* Build configuration list for PBXNativeTarget "SmenarTests" */;
+			buildPhases = (
+				72011E812441ED27007493CE /* Sources */,
+				72011E822441ED27007493CE /* Frameworks */,
+				72011E832441ED27007493CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72011E872441ED27007493CE /* PBXTargetDependency */,
+			);
+			name = SmenarTests;
+			productName = SmenarTests;
+			productReference = 72011E852441ED27007493CE /* SmenarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		72011E8F2441ED27007493CE /* SmenarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72011E9F2441ED27007493CE /* Build configuration list for PBXNativeTarget "SmenarUITests" */;
+			buildPhases = (
+				72011E8C2441ED27007493CE /* Sources */,
+				72011E8D2441ED27007493CE /* Frameworks */,
+				72011E8E2441ED27007493CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72011E922441ED27007493CE /* PBXTargetDependency */,
+			);
+			name = SmenarUITests;
+			productName = SmenarUITests;
+			productReference = 72011E902441ED27007493CE /* SmenarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72011E642441ED23007493CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Martin Berger";
+				TargetAttributes = {
+					72011E6B2441ED23007493CE = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					72011E842441ED27007493CE = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 72011E6B2441ED23007493CE;
+					};
+					72011E8F2441ED27007493CE = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 72011E6B2441ED23007493CE;
+					};
+				};
+			};
+			buildConfigurationList = 72011E672441ED23007493CE /* Build configuration list for PBXProject "Smenar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72011E632441ED23007493CE;
+			packageReferences = (
+				72011F4424519817007493CE /* XCRemoteSwiftPackageReference "MHCoreData" */,
+			);
+			productRefGroup = 72011E6D2441ED23007493CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72011E6B2441ED23007493CE /* Smenar */,
+				72011E842441ED27007493CE /* SmenarTests */,
+				72011E8F2441ED27007493CE /* SmenarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72011E6A2441ED23007493CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72011E7F2441ED27007493CE /* LaunchScreen.storyboard in Resources */,
+				724EEAD32472EDEB00744DD2 /* icon_60pt@2x.png in Resources */,
+				724EEAD12472EDEB00744DD2 /* icon_29pt@2x.png in Resources */,
+				724EEACD2472EDEB00744DD2 /* Icon_w.png in Resources */,
+				724EEADA2472EDEB00744DD2 /* icon_40pt@2x.png in Resources */,
+				724EEACF2472EDEB00744DD2 /* icon_40pt.png in Resources */,
+				724EEAD72472EDEB00744DD2 /* icon_29pt.png in Resources */,
+				724EEADB2472EDEB00744DD2 /* icon_83.5@2x.png in Resources */,
+				724EEAD92472EDEB00744DD2 /* D-ICON.png in Resources */,
+				724EEACC2472EDEB00744DD2 /* O-ICON.png in Resources */,
+				724EEAD42472EDEB00744DD2 /* icon_76pt@2x.png in Resources */,
+				724EEAD82472EDEB00744DD2 /* icon_60pt@3x.png in Resources */,
+				724EEAD22472EDEB00744DD2 /* icon_40pt@3x.png in Resources */,
+				724EEADC2472EEC300744DD2 /* autobus-bold.regular.ttf in Resources */,
+				724EEAD62472EDEB00744DD2 /* R-ICON.png in Resources */,
+				72011E7C2441ED27007493CE /* Assets.xcassets in Resources */,
+				724EEACE2472EDEB00744DD2 /* icon_20pt@3x.png in Resources */,
+				72011E772441ED23007493CE /* Main.storyboard in Resources */,
+				724EEACA2472EDEB00744DD2 /* icon_76pt.png in Resources */,
+				724EEAD02472EDEB00744DD2 /* icon_20pt@2x.png in Resources */,
+				724EEACB2472EDEB00744DD2 /* Icon.png in Resources */,
+				724EEAC92472EDEB00744DD2 /* icon_29pt@3x.png in Resources */,
+				724EEAD52472EDEB00744DD2 /* N-ICON.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72011E832441ED27007493CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72011E8E2441ED27007493CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72011E682441ED23007493CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724C6992246833FF00E30624 /* SettingsVC.swift in Sources */,
+				72011F492452ED2C007493CE /* GlobalCDModel.swift in Sources */,
+				72148876246AC77300AAC1EB /* ShiftTableVC.swift in Sources */,
+				72011EF724431D91007493CE /* Calendar.swift in Sources */,
+				72011E742441ED23007493CE /* ViewController.swift in Sources */,
+				72011F532455A5E9007493CE /* CD-Extensions.swift in Sources */,
+				72011F43244C9839007493CE /* ShiftAddVC.swift in Sources */,
+				72F486A4245A25990080B96F /* OverviewVC.swift in Sources */,
+				72011E7A2441ED23007493CE /* Smenar.xcdatamodeld in Sources */,
+				72011F1F244C9058007493CE /* CalendarVC.swift in Sources */,
+				72011E702441ED23007493CE /* AppDelegate.swift in Sources */,
+				72148878246D759200AAC1EB /* WorkedVC.swift in Sources */,
+				72011E722441ED23007493CE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72011E812441ED27007493CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72011E8C2441ED27007493CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72011E872441ED27007493CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72011E6B2441ED23007493CE /* Smenar */;
+			targetProxy = 72011E862441ED27007493CE /* PBXContainerItemProxy */;
+		};
+		72011E922441ED27007493CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72011E6B2441ED23007493CE /* Smenar */;
+			targetProxy = 72011E912441ED27007493CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		72011E752441ED23007493CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72011E762441ED23007493CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		72011E7D2441ED27007493CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72011E7E2441ED27007493CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72011E972441ED27007493CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72011E982441ED27007493CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72011E9A2441ED27007493CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Smenar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FIT-VUT-IZA.Smenar";
+				PRODUCT_NAME = "Směnář";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72011E9B2441ED27007493CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Smenar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FIT-VUT-IZA.Smenar";
+				PRODUCT_NAME = "Směnář";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		72011E9D2441ED27007493CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmenarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FIT-VUT-IZA.SmenarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smenar.app/Smenar";
+			};
+			name = Debug;
+		};
+		72011E9E2441ED27007493CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmenarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FIT-VUT-IZA.SmenarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smenar.app/Smenar";
+			};
+			name = Release;
+		};
+		72011EA02441ED27007493CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmenarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FIT-VUT-IZA.SmenarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Smenar;
+			};
+			name = Debug;
+		};
+		72011EA12441ED27007493CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmenarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FIT-VUT-IZA.SmenarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Smenar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72011E672441ED23007493CE /* Build configuration list for PBXProject "Smenar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72011E972441ED27007493CE /* Debug */,
+				72011E982441ED27007493CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72011E992441ED27007493CE /* Build configuration list for PBXNativeTarget "Smenar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72011E9A2441ED27007493CE /* Debug */,
+				72011E9B2441ED27007493CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72011E9C2441ED27007493CE /* Build configuration list for PBXNativeTarget "SmenarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72011E9D2441ED27007493CE /* Debug */,
+				72011E9E2441ED27007493CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72011E9F2441ED27007493CE /* Build configuration list for PBXNativeTarget "SmenarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72011EA02441ED27007493CE /* Debug */,
+				72011EA12441ED27007493CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		72011F4424519817007493CE /* XCRemoteSwiftPackageReference "MHCoreData" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IZAmhfit/MHCoreData";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		72011F4524519817007493CE /* MHCoreData */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72011F4424519817007493CE /* XCRemoteSwiftPackageReference "MHCoreData" */;
+			productName = MHCoreData;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		72011E782441ED23007493CE /* Smenar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				72011E792441ED23007493CE /* Smenar.xcdatamodel */,
+			);
+			currentVersion = 72011E792441ED23007493CE /* Smenar.xcdatamodel */;
+			path = Smenar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 72011E642441ED23007493CE /* Project object */;
+}
