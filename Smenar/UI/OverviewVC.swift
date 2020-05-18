@@ -38,6 +38,7 @@ class OverviewVC : UIViewController {
         else {
             let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "SettingsVC") as? SettingsVC
             self.navigationController?.pushViewController(vc!, animated: true)
+            initData()
         }
     }
     
@@ -97,6 +98,8 @@ class OverviewVC : UIViewController {
                     if (shift.value(forKeyPath: "startDate") as! Date) != (shift.value(forKeyPath: "endDate") as! Date) {
                         delta = 24 + delta
                     }
+                    print(shift.value(forKeyPath: "startDate") as Any)
+                    print(delta)
                     if delta > 6 {
                         workedHours += delta - 0.5
                     }
