@@ -14,14 +14,13 @@
     <entity name="Shift" representedClassName="Shift" syncable="YES" codeGenerationType="class">
         <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="endTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="image" optional="YES" attributeType="Binary"/>
         <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="typeOfShift" optional="YES" attributeType="String"/>
     </entity>
     <elements>
         <element name="Identification" positionX="-54" positionY="27" width="128" height="73"/>
-        <element name="Shift" positionX="-226.8984375" positionY="164" width="128" height="133"/>
         <element name="MySettings" positionX="-117" positionY="171" width="128" height="118"/>
+        <element name="Shift" positionX="-226.8984375" positionY="164" width="128" height="118"/>
     </elements>
 </model>

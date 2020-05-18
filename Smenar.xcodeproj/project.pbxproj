@@ -43,6 +43,7 @@
 		724EEADA2472EDEB00744DD2 /* icon_40pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEAC72472EDEA00744DD2 /* icon_40pt@2x.png */; };
 		724EEADB2472EDEB00744DD2 /* icon_83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 724EEAC82472EDEB00744DD2 /* icon_83.5@2x.png */; };
 		724EEADC2472EEC300744DD2 /* autobus-bold.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 724EEAB52472EDCD00744DD2 /* autobus-bold.regular.ttf */; };
+		72AFF88B24733FB5009AB0DA /* InitializeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AFF88A24733FB5009AB0DA /* InitializeData.swift */; };
 		72F486A4245A25990080B96F /* OverviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F486A3245A25990080B96F /* OverviewVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,7 @@
 		724EEAC62472EDEA00744DD2 /* D-ICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "D-ICON.png"; sourceTree = "<group>"; };
 		724EEAC72472EDEA00744DD2 /* icon_40pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_40pt@2x.png"; sourceTree = "<group>"; };
 		724EEAC82472EDEB00744DD2 /* icon_83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_83.5@2x.png"; sourceTree = "<group>"; };
+		72AFF88A24733FB5009AB0DA /* InitializeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeData.swift; sourceTree = "<group>"; };
 		72F486A3245A25990080B96F /* OverviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -222,6 +224,7 @@
 			children = (
 				72011F482452ED2C007493CE /* GlobalCDModel.swift */,
 				72011F522455A5E9007493CE /* CD-Extensions.swift */,
+				72AFF88A24733FB5009AB0DA /* InitializeData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				72011E742441ED23007493CE /* ViewController.swift in Sources */,
 				72011F532455A5E9007493CE /* CD-Extensions.swift in Sources */,
 				72011F43244C9839007493CE /* ShiftAddVC.swift in Sources */,
+				72AFF88B24733FB5009AB0DA /* InitializeData.swift in Sources */,
 				72F486A4245A25990080B96F /* OverviewVC.swift in Sources */,
 				72011E7A2441ED23007493CE /* Smenar.xcdatamodeld in Sources */,
 				72011F1F244C9058007493CE /* CalendarVC.swift in Sources */,
